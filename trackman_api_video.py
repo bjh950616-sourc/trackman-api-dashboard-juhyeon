@@ -13,8 +13,8 @@ st.set_page_config(layout="wide", page_title="TrackMan Game Analysis Hub")
 
 # [2] API 설정 (가이드 Section 4, 5) [cite: 68, 73]
 # 배포 시에는 st.secrets를 사용하는 것이 안전합니다.
-CLIENT_ID = "LotteGiants-test2"
-CLIENT_SECRET = 'q"4Hxn#l8dvq61y^3iU#1t}xCgxap_?O'
+CLIENT_ID = st.secrets["tm_client_id"]
+CLIENT_SECRET = st.secrets["tm_client_secret"]
 AUTH_URL = "https://login.trackmanbaseball.com/connect/token"
 BASE_URL = "https://dataapi.trackmanbaseball.com/api/v1"
 
